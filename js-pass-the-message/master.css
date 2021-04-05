@@ -3,11 +3,50 @@ body{
     margin: 0;
     padding: 0;
     font-family: monospace;
-    text-align: center;
+    background-color: #84d1f0;
 }
 /* class */
 .wrapper{
-    margin-top: 200px;
+    margin: 100px auto;
     text-align: center;
+    width: 600px;
+    height: 500px;
+    border: 1px solid;
+    background-color: #f8ede3;
+}
+.title{
+    margin-top: 50px;
+}
+.input {
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 25px;
+    border-width: 0px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 0px;
+    box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    text-align: center;
+    width: 80%;
+}
+.button{
+    margin-top: 50px;
+    background-color: #84d1f0;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+
+}
+.messageDeliveredTitle{
+    margin-top: 50px;
+}
+.textDisplay{
+    font-size: 20px;
 }
 /* id */
