@@ -1,0 +1,20 @@
+body{
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    margin-top: 20rem;
+}
+.buttonStyle {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    opacity: 0.3;
+  }
