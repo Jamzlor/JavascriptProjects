@@ -1,0 +1,60 @@
+body{
+    font-family: 'Assistant', sans-serif;
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #74d4c0 55%, #f7f7f7 45%);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+button{
+    text-decoration: none;
+    background-color: #fa744f;
+    color: #f7f7f7;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+button:active{
+    background-color: #74d7c0;
+}
+#text{
+    font-size: 30px;
+    color: #363636;
+}
+
+#quote-author{
+    position: relative;
+    right: 25%;
+    height: 350px;
+    border-color: black;
+}
+
+.quotations{
+    font-size: 80px;
+    color: #fa744f;
+}
+
+#actions{
+    position: relative;
+    width: 250px;
+    float: right;
+}
+
+#tweet-quote{
+    margin-right: 20px;
+    font-size: 24px;
+    color: #00acee;
+}
+
+#author{
+    text-align: center;
+    font-size: 24px;
+    color: #363636;
+}
+#quote-box{
+    height: 500px;
+    margin: 18% 30% 0 30%;
+}

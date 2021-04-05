@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="master.css">
+</head>
+
+<body>
+    <div id="title-contianer" class="title-container margin-top">
+        <h1 id=" title" class="title">Tip Calculator</h1>
+    </div>
+    <div id="wrapper" class="wrapper">
+        <div id="input-form-container" class="input-form-container left-container">
+            <div id='input-form' class="margin-top">
+                <div id="tip-input-description">
+                    <h3>Enter amount due for entire bill</h3>
+                </div>
+                <div id="bill-amount-container">
+                    <input type="number" id="bill-amount" class="bill-amount forms" placeholder="$XX.XX" min="0.01"
+                        step="0.01">
+                </div>
+                <div id="tip-input-description">
+                    <h3>Enter percentage of tip</h3>
+                </div>
+                <div id="tip-percentage-container">
+                    <input type="number" id="tip-percentage" class="tip-percentage forms" placeholder="XX%" min="0" max="100"
+                        step="1">
+                </div>
+            </div>
+        </div>
+
+        <div id="resulting-display" class="right-container">
+            <div id="tip-amount" class="results display-box tip-amount">
+                <p id="tip-amount-display" class="tip-amount-display"></p>
+            </div>
+            <div id="total-amount" class='results display-box total-amount'>
+                <p id="total-amount-display" class="total-amount-display"></p>
+            </div>
+            <div id="calculate-button" class="results calculate-button">
+                <button onclick="calculateTips()" type="button" class="calc-button">Calculate</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
