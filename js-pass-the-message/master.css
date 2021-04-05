@@ -1,0 +1,13 @@
+/* element */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    text-align: center;
+}
+/* class */
+.wrapper{
+    margin-top: 200px;
+    text-align: center;
+}
+/* id */
