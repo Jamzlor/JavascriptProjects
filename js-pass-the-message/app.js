@@ -1,8 +1,25 @@
 let button = document.getElementById('button');
+let textDisplay = document.getElementById('textDisplay');
+let input = document.getElementById('input');
 
-button.addEventListener('click', function(){
-    document.getElementById('textDisplay').innerHTML = document.getElementById('input').value;
+function submit(){
+    if(input.value.length < 1){
+        textDisplay.innerHTML = 'Input was left blank!';
+        setTimeout(function(){
+            textDisplay.innerHTML = null;
+        }, 2000)
+    } else {
+        textDisplay.innerHTML = input.value;
+        input.value = null;
+    }   
+}
+
+button.addEventListener('click', submit)
+
+input.addEventListener('keyup', function(event){
+    if(event.keyCode === 13) {
+        event.preventDefault();
+        button.click();
+        input.value = null;
+    }
 });
-
-// TODO link this action to the enter key so when ever enter key is pressed the text display area will have the typed message.
-// TODO produce an alert when the input is left blank and submit triggered. it will have to disappear in 2 seconds.
