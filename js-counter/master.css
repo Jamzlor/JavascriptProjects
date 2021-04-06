@@ -1,0 +1,39 @@
+/* element */
+body{
+    margin:0;
+    padding:0;
+    font-family: monospace;
+    background-color: #c8eed9;
+}
+
+/* class */
+.wrapper{
+    width: 500px;
+    height: 600px;
+    margin: auto;
+    margin-top: 100px;
+    border: 1px solid;
+    text-align: center;
+    background-color: #7eca9c;
+}
+.numDisplay{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 10rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    margin-top: 20px;
+    width: 400px;
+    background-color: #ccffbd;
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+/* id */
