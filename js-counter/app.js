@@ -1,5 +1,5 @@
 let numDisplay = document.getElementById('numDisplay')
-let count = 1;
+let count = 0;
 
 numDisplay.innerHTML = count;
 
