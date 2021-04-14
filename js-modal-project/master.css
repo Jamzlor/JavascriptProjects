@@ -29,7 +29,7 @@ span:hover{
 
 .grid-container{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
 }
 .card{
     width: 300px;
@@ -44,6 +44,54 @@ span:hover{
 .price{
     color: grey;
     font-size: 1.5rem;
+}
+
+.popUp{
+    width:99%;
+    height: 80vh;
+    margin-top: 5%;
+    left: 10px;
+    position: fixed;
+    display: none;
+}
+.closeButton{
+    width: 30px;
+    height: 30px;
+    border: 5px solid;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.popUpButton{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    border: 5px solid;
+    border-radius: 5px;
+    display: inline-block;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.pointer:hover{
+    cursor: pointer;
+}
+
+.popUpWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+.imgContainer{
+    width: 60vw;
+    height: 70vh;
+    background: url(images/1.jpg) center/cover;
 }
 
 /* id */
