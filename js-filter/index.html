@@ -7,11 +7,13 @@
     <title>JS Filter Project</title>
     <link rel="stylesheet" href="master.css">
 </head>
+
 <body>
     <div id="titleContainer" class="titleContainer">
         <h1>A La Carte Menu</h1>
     </div>
     <div id="navBar" class="navBar">
+        <span id="all" class="all">All</span> |
         <span id="appetizer" class="nav-item">Appetizer</span> |
         <span id="main" class="nav-item">Main</span> |
         <span id="vegetable" class="nav-item">Greens</span> |
@@ -19,56 +21,60 @@
         <span id="meat" class="nav-item">Meat</span> |
         <span id="dessert" class="nav-item">Dessert</span>
     </div>
-    <div id="searchBar" class="searchBar">
-        <input type="text" placeholder="Search...">
+
+    <div class="searchBar">
+        <input id="searchBar" class="searchBar" type="search" placeholder="Search..."/>
     </div>
+
     <div id="wrapper" class="wrapper grid-container">
         <div id="dish1" class="card dessert">
             <img src="images/1.jpg" alt="dish1">
             <p class="price">$98</p>
-            <h1>Raspberry Coconut marshmellow</h1>
+            <h1 class="dishName">Raspberry Coconut Marshmellow</h1>
         </div>
         <div id="dish2" class="card main seafood">
             <img src="images/2.jpg" alt="dish2">
             <p class="price">$109</p>
-            <h1>Mini Uni Don</h1>
+            <h1 class="dishName">Mini Uni Don</h1>
         </div>
         <div id="dish3" class="card seafood main">
             <img src="images/3.jpg" alt="dish3">
             <p class="price">$198</p>
-            <h1>Pan Seared Cod Fish</h1>
+            <h1 class="dishName">Pan Seared Cod Fish</h1>
         </div>
         <div id="dish4" class="card seafood main">
             <img src="images/4.jpg" alt="dish4">
             <p class="price">$188</p>
-            <h1>Gamberi Rosso Spaghetti</h1>
+            <h1 class="dishName">Gamberi Rosso Spaghetti</h1>
         </div>
         <div id="dish5" class="card meat main">
             <img src="images/5.jpg" alt="dish5">
             <p class="price">$218</p>
-            <h1>Lamb Roulade, Squid-ink Emulsion</h1>
+            <h1 class="dishName">Lamb Roulade, Squid-ink Emulsion</h1>
         </div>
         <div id="dish6" class="card seafood appetizer">
             <img src="images/6.jpg" alt="dish6">
             <p class="price">$168</p>
-            <h1>Oysters</h1>
+            <h1 class="dishName">Oysters</h1>
         </div>
         <div id="dish7" class="card vegetable appetizer">
             <img src="images/7.jpg" alt="dish7">
             <p class="price">$138</p>
-            <h1>Root Garden</h1>
+            <h1 class="dishName">Root Garden</h1>
         </div>
         <div id="dish8" class="card seafood appetizer">
             <img src="images/8.jpg" alt="dish8">
             <p class="price">$148</p>
-            <h1>Swordfish Crudo</h1>
+            <h1 class="dishName">Swordfish Crudo</h1>
         </div>
         <div id="dish9" class="card meat appetizer">
             <img src="images/9.jpg" alt="dish9">
             <p class="price">$128</p>
-            <h1>Procuitto</h1>
+            <h1 class="dishName">Procuitto</h1>
         </div>
     </div>
 </body>
+
 <script src="app.js"></script>
+
 </html>
