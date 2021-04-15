@@ -1,0 +1,89 @@
+/* element */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: #2f5d62;
+}
+
+/* class */
+.wrapper {
+    margin: 5% auto;
+    width: 700px;
+    height: 850px;
+    border: 3px solid;
+    background-color: #f3f4ed;
+}
+
+.display {
+    width: 95%;
+    margin: 20px auto;
+    height: 150px;
+    border: 3px solid;
+    text-align: right;
+    background-color: #333456;
+}
+.result{
+    margin: 10 auto 0;
+    height: 20px;
+    font-size: 20px;
+    padding: 0 20px;
+}
+.displayText{
+    height: 40px;
+    font-size: 40px;
+    padding: 0 20px;
+}
+
+.keypad{
+    width: 95%;
+    margin: auto;
+    height: 620px;
+    border: 3px solid;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.keypad:hover{
+    cursor: pointer;
+}
+
+.keyNum{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.operators{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-rows: 30% 30% auto;
+}
+
+.centerAlign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyNumButton{
+    border: 3px solid;
+    font-size: 30px;
+    background-color: #f3f4ed;
+}
+.plusMinus{
+    font-size: 15px;
+}
+.clearC{
+    border: 3px solid;
+    font-size: 30px;
+    background-color: red;
+}
+.operatorButton{
+    border: 3px solid;
+    font-size: 30px;
+    background-color: #f05945;
+}
+/* id */
