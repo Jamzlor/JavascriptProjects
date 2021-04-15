@@ -4,18 +4,29 @@ body{
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 img{
     width: 300px;
     height: 300px;
     object-fit: cover;
 }
+img:hover{
+    cursor: pointer;
+}
 span:hover{
     cursor: pointer;
 }
 /* class */
+.titleContainer{
+    margin-top: 50px;
+}
 .wrapper{
-    width: 1000px;
+    width: 1200px;
     margin: auto;
     text-align: center;
 }
@@ -29,7 +40,9 @@ span:hover{
 
 .grid-container{
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
 }
 .card{
     width: 300px;
@@ -38,26 +51,24 @@ span:hover{
     border: 2px solid;
     margin: 20px;
 }
-.card:hover{
-    cursor: pointer;
-}
+
 .price{
     color: grey;
     font-size: 1.5rem;
 }
 
 .popUp{
-    width:99%;
-    height: 80vh;
-    margin-top: 5%;
-    left: 10px;
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    margin-top: -5%;
     position: fixed;
     display: none;
 }
 .closeButton{
     width: 30px;
     height: 30px;
-    border: 5px solid;
+    border: 2px solid;
     border-radius: 5px;
     margin-left: auto;
     margin-right: 100px;
@@ -70,7 +81,7 @@ span:hover{
     width: 30px;
     height: 30px;
     margin: 0 10px;
-    border: 5px solid;
+    border: 2px solid;
     border-radius: 5px;
     display: inline-block;
     display: grid;
