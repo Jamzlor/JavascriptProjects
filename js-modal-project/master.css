@@ -65,6 +65,11 @@ span:hover{
     position: fixed;
     display: none;
 }
+.popUpWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
 .closeButton{
     width: 30px;
     height: 30px;
@@ -78,10 +83,8 @@ span:hover{
     font-weight: bold;
 }
 .popUpButton{
-    width: 30px;
-    height: 30px;
-    margin: 0 10px;
-    border: 2px solid;
+    width: 50px;
+    height: 680px;
     border-radius: 5px;
     display: inline-block;
     display: grid;
@@ -94,11 +97,7 @@ span:hover{
     cursor: pointer;
 }
 
-.popUpWrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;;
-}
+
 .imgContainer{
     width: 60vw;
     height: 70vh;

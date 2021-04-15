@@ -50,34 +50,35 @@ cardImg.forEach(item => item.addEventListener('click', function(e){
     count = imgArr.indexOf(imgUrl);
 }));
 
-
-// close button function will close the popup 
-closeButton.addEventListener('click', function(){
-    popUp.style.display = 'none';
-});
-
 // left and right button will cycle through a carousel of all photos available on this menu
 const leftButton = document.querySelector('#leftButton');
 const rightButton = document.querySelector('#rightButton');
 
-leftButton.addEventListener('click', function(e){
-    if(count === 0){
-        count = imgArr.length - 1;
-        imgContainer.style.background = `url(${imgArr[count]}) center/cover`;
-    } else{
-        count--;
-        imgContainer.style.background = `url(${imgArr[count]}) center/cover`;
+    leftButton.addEventListener('click', function(e){
+        if(count === 0){
+            count = imgArr.length - 1;
+            imgContainer.style.background = `url(${imgArr[count]}) center/cover`;
+        } else{
+            count--;
+            imgContainer.style.background = `url(${imgArr[count]}) center/cover`;
+        }
+    });
+    
+    rightButton.addEventListener('click', function(e){
+        if(count === imgArr.length - 1){
+            count = 0;
+            imgContainer.style.background = `url(${imgArr[count]}) center/cover`;
+        } else{
+            count++;
+            imgContainer.style.background = `url(${imgArr[count]}) center/cover`;
+        }
+    });
+    
+    // close button function will close the popup  
+    closeButton.addEventListener('click', close);
+    
+    function close(){
+        popUp.style.display = 'none';
     }
-});
+    
 
-rightButton.addEventListener('click', function(e){
-    if(count === imgArr.length - 1){
-        count = 0;
-        imgContainer.style.background = `url(${imgArr[count]}) center/cover`;
-    } else{
-        count++;
-        imgContainer.style.background = `url(${imgArr[count]}) center/cover`;
-    }
-});
-    
-    
