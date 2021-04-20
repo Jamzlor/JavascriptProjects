@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Tip Form Project</title>
+    <link rel="stylesheet" href="master.css">
+</head>
+<body>
+    <div id="wrapper" class="wrapper">
+        <div id="titleContainer" class="titleContainer">
+            <h1 id="title" class="title">TIP CALCULATOR</h1>
+        </div>
+        <div id="errorMessage" class="errorMessage">
+            <p>All fields are required</p>
+        </div>
+        <div id="billContianer" class="container">
+            <h2 id="billQuestion" class="billQuestion">How Much Was Your Bill?</h2>
+                <div id="input" class="input">
+                    <input id="billValue" class="value" type="number" step="0.01" placeholder="$">
+                </div>
+        </div>
+        <div id="customerContainer" class="container">
+            <h2 id="customerQuestion" class="customerQuestion">How Many People in Your Party?</h2>
+                <div id="input" class="input">
+                    <input id="customerValue" class="value" type="number" step="1" placeholder="People">
+                </div>
+        </div>
+        <div id="serviceContainer" class="container">
+            <h2 id="servicerQuestion" class="serviceQuestion">How Was The Service?</h2>
+                <div id="input" class="input">
+                    <select name="services" id="services" class="service value">
+                        <option class="serviceValue" value="null">-</option>
+                        <option class="serviceValue" value="0.2">Great 20%</option>
+                        <option class="serviceValue" value="0.16">Good 16%</option>
+                        <option class="serviceValue" value="0.12">Average 12%</option>
+                        <option class="serviceValue" value="0.08">Bad 8%</option>
+                    </select>
+                </div>
+        </div>
+        <div id="submit" class="submit">
+            <h2>Submit</h2>
+        </div>
+        <div id="loadingAnimation" class="loadingContainer">
+            <div id="loader" class="loader"></div>
+        </div>
+        <div id="resultContainer" class="resultContainer">
+            <h1 id="totalTip" class="result"></h1>
+            <h1 id="totalAmount" class="result"></h1>
+            <h1 id="eachPersonPrice" class="result"></h1>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
