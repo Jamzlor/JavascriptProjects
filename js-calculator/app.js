@@ -1,33 +1,55 @@
 const display = document.getElementById('displayText');
 const keyNum = document.getElementsByClassName('keyNumButton');
 const operators = document.getElementsByClassName('operatorButton');
+const operatorsArr = Array.from(operators).map(item => item.innerHTML);
+const plusMinus = document.getElementById('plusMinus');
 const clear = document.getElementById('clearC');
-const resultDisplay = document.getElementById('result');
+const decimal = document.getElementById('decimal');
+const equals = document.getElementById('equal');
 
-Array.from(keyNum).forEach(button => button.addEventListener('click', function () {
-    if (display.innerHTML.length <= 27) {
-        let clickedNum = button.innerHTML;
-        display.innerHTML += clickedNum;
-    }
 
-}));
-let result = [];
+var equation = [];
+let input = '';
 
-Array.from(operators).forEach(button => button.addEventListener('click', function () {
-    if (button.innerHTML != '=') {
-        let num = parseInt(display.innerHTML, 10);
-        let operator = button.innerHTML;
-        result.push(num);
-        result.push(operator);
+// keyNum input functions
+Array.from(keyNum).forEach(button => button.addEventListener('click', function(){
+    if(input.length === 0){
         display.innerHTML = '';
-    } else {
-        // evaluate the inputs
+        display.innerHTML += button.innerHTML;
+        input += button.innerHTML;
+    } else if(display.innerHTML.length < 25){
+        input += button.innerHTML;
+        display.innerHTML += button.innerHTML;    
     }
+    console.log(input);
 }));
 
-// clear button to clear all calculations and display area
-clear.addEventListener('click', function () {
-    display.innerHTML = "";
-    resultDisplay.innerHTML = '_';
-    result = [];
+// operators input function
+Array.from(operators).forEach(button => button.addEventListener('click', function(){
+    if(input.length > 0){
+        equation.push(input);
+        equation.push(button.innerHTML);
+        input = '';
+    }
+    console.log(equation);
+}));
+
+//decimal input function
+decimal.addEventListener('click', function(){
+    if(input.length === 0){
+        input = '0.';
+        display.innerHTML = '0.';
+    } else if(!input.includes('.')) {
+        input += '.';
+        display.innerHTML += '.';
+    }
+    console.log(input)
+});
+
+// equal input function
+equals.addEventListener('click', function(){
+    equation.push(input);
+    input = '';
+    let result = eval(equation.join(''));
+    display.innerHTML = result;
 });
