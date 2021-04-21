@@ -35,7 +35,8 @@ function createCard(taskNameInput) {
 
     var editPrompt = document.createElement('input');
     editPrompt.classList.add('editPrompt');
-    editPrompt.autofocus = true;
+    editPrompt.autofocus = 'autofocus';
+
     var editButton = document.createElement('span');
     editButton.classList.add('action', 'edit', 'fas', 'fa-edit');
     editButton.style.color = 'blue';
