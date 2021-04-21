@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head></head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Todo List</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<body>
+    <div id="wrapper" class="wrapper">
+        <div id="titleContainer" class="titleContainer">
+            <h1 id="title" class="title">Todo List</h1>
+        </div>
+        <div id="inputContainer" class="inputContainer">
+            <h3 id="inputInstruction" class="instruction">Enter your task below, then press Enter to add to todo list.</h3>
+            <input id="input" class="input" type="text" autocomplete="off" autofocus>
+            <h3 id="errorMessage" class="errorMessage">Invalid Input</h3>
+        </div>
+        <div id="taskOutput" class="taskOutput">
+            
+        </div>
+        <div id="clearButton" class="clear">
+            Clear Items
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

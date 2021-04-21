@@ -1,0 +1,100 @@
+/* root */
+:root {
+    --background: #f8e2c8;
+    --main: rgb(240, 232, 220);
+    --secondary: rgb(92, 71, 25);
+}
+
+/* element */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: var(--background);
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+}
+
+/* class */
+.wrapper {
+    width: 70%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.titleContainer{
+    width: 200px;
+    margin: 100px auto 0;;
+}
+
+.input{
+    width: calc(100% - 40px);
+    padding: 20px;
+    font-size: 30px;
+    border-color: var(--secondary); 
+    border-radius: 5px; 
+}
+
+.input:focus{
+    outline: none;
+}
+
+.errorMessage{
+    color: red;
+    display: none;
+}
+
+.outputCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    border: 1px solid;
+    border-radius: 5px;
+    width: 100%;
+    margin: 20px auto; 
+    background-color: var(--main);
+}
+
+.editPrompt{
+    width: 40%;
+    margin: 0 10px;
+    display: inline;
+    position: absolute;
+    left: 300px;
+}
+.action, .taskName{
+    margin: 20px;
+    font-size: 20px;
+}
+
+.action:hover{
+    cursor: pointer;
+}
+
+.clear{
+    border: 2px solid var(--secondary);
+    border-radius: 5px;
+    width: 200px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: var(--secondary);
+}
+
+.clear:active{
+    background-color: var(--main)
+}
+.clear:hover{
+    cursor: pointer;
+}
+/* id */
