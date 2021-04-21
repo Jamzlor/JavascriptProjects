@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Rock Paper Scissors</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<body>
+    <div id="winLoss" class="winLoss">
+        <h1 id="winLossMessage" class="winLossMessage"></h1>
+    </div>
+    <div id="wrapper" class="wrapper">
+        <div id="titleContainer" class="titleContainer">
+            <h1 id="title" class="title">Rock <span class="fas fa-hand-rock"></span> Paper <span class="fas fa-hand-paper"></span> Scissors <span class="fas fa-hand-peace"></span></h1>
+            <h2 id="instruction" class="instruction">Pick an Action</h2> 
+        </div>
+        <div id="playArea" class="playArea">
+            <div id="opponentChoice" class="opponentChoice choices">
+                <span id="opponentPlays" class="opponentPlays"></span>
+            </div>
+            <div id="playerChoice" class="playerChoice choices">
+                <span id="playerPlays" class="playerPlays"></span>
+            </div>
+        </div>
+        <div id="playerOptions" class="playerOptions">
+            <button id="rock" class="choiceBtn rockChoice fas fa-hand-rock"></button>
+            <button id="paper" class="choiceBtn paperChoice fas fa-hand-paper"></button>
+            <button id="scissor" class="choiceBtn scissorsChoice fas fa-hand-peace"></button>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

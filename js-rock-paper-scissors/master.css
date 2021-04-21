@@ -1,0 +1,88 @@
+/* root */
+:root{
+    --background: #dbf6e9;
+    --main: #f05945;
+    --choice: #5eaaa8;
+}
+/* element */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: var(--background);
+}
+/* class */
+.wrapper{
+    width: 50%;
+    height: 100vh;
+    margin: auto;
+}
+
+.titleContainer{
+    margin: 20px 0 50px;
+}
+.opponentPlays{
+    transform: rotate(180deg);
+}
+.choices{
+    width: 100%;
+    margin-bottom: 100px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+}
+
+.opponentChoice{
+    color: var(--main);
+}
+
+.playerChoice{
+    color: var(--choice)
+}
+.playerOptions{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.choiceBtn{
+    border: 5px solid var(--choice);
+    color: var(--choice);
+    background-color: var(--background);
+    font-size: 5rem;
+    margin: 0 30px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.choiceBtn:hover{
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+}
+.choiceBtn:focus{
+    outline: none;
+}
+.choiceBtn:active{
+    background-color:#98ddca;
+}
+
+
+.winLoss{
+    position: absolute;
+    width: 100%;;
+    height: 50vh;
+    margin-top: 200px;;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(54, 69, 71, 0.7);
+    z-index: 10000;
+}
+
+.winLossMessage{
+    font-size: 20rem;
+    color: rgb(0, 255, 255);
+}
+/* id */
