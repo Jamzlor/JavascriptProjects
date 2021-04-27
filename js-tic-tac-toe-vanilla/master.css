@@ -1,0 +1,103 @@
+/* root */
+:root {
+    --before: #ffc288;
+    --o: #fea82f;
+    --x: #ff8303;
+    --mainBorder: #ff6701;
+    --background: #fcecdd;
+    --main: white;
+}
+
+/* element */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    text-decoration: none;
+    border: none;
+}
+button:focus{
+    outline: none;
+}
+
+/* class */
+.wrapper{
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+}
+.title{
+    margin: 50px 0 0;
+}
+.playArea {
+    width: 450px;
+    height: 450px;
+    margin: 50px auto;
+    background-color: var(--mainBorder);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+
+}
+
+.playSquare {
+    background-color: var(--before);
+    width: 143px;
+    height: 143px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+.playSquare:hover{
+    cursor: pointer;
+}
+.playSquare:disabled{
+    background-color: var(--after);
+    color: white;
+}
+
+.reset{
+    padding: 10px 20px;
+    font-weight: bold;
+    border: 2px solid;
+    background-color: var(--before);
+}
+.reset:hover{
+    background-color: var(--after);
+    cursor: pointer;
+}
+.reset:active{
+    background-color: var(--mainBorder);
+}
+
+.noSelect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+                                
+  }
+
+.winMessageContainer{
+    width: 450px;
+    height: 450px;
+    margin-top: 120px;
+    background-color: rgb(57, 62, 70, 0.8);
+    color: white;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+/* id */
