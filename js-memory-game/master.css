@@ -1,0 +1,90 @@
+/* root */
+:root {
+    --background: #9ad3bc;
+    --playAreaBackground: #f3eac2;
+    --square: #f5b461;
+    --reset: #f05454;
+    --resetActive: #ff9a8c;
+}
+
+/* element */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: var(--background);
+}
+
+button {
+    background-color: var(--reset);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: var(--resetActive);
+}
+
+/* class */
+.wrapper {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+}
+
+.title {
+    margin: 50px 0 0;
+    text-align: center;
+}
+
+.playArea {
+    width: 600px;
+    height: 600px;
+    padding: 50px;
+    margin: 50px auto 0;
+    border-radius: 10px;
+    background-color: var(--playAreaBackground);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+
+}
+
+.cards {
+    background-color: var(--square);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards:hover{
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 3rem;
+}
+
+.displayContainer {
+    width: calc(600px + 100px);
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.timer {
+    border: 3px solid;
+    border-radius: 3px;
+    padding: 10px 30px;
+    margin: 0;
+}
+
+
+/* id */
