@@ -2,7 +2,7 @@
 :root {
     --background: #9ad3bc;
     --playAreaBackground: #f3eac2;
-    --square: #f5b461;
+    --square: #fd8c04;
     --reset: #f05454;
     --resetActive: #ff9a8c;
 }
@@ -88,5 +88,31 @@ button:active {
     margin: 0;
 }
 
+.fa-anchor{
+    color: #3797a4;
+}
 
+.fa-blender{
+    color: #321f28;
+}
+
+.fa-baseball-ball{
+    color: #f4f4f2;
+}
+
+.fa-atom{
+    color: #54e346;
+}
+
+.fa-archway{
+    color: #c7956d;
+}
+
+.fa-bell{
+    color: #f2d974;
+}
+
+.fa-band-aid{
+    color: #f9f7cf;
+}
 /* id */

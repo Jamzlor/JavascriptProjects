@@ -50,9 +50,7 @@ cards.forEach(item => item.addEventListener('click', function(){
     setInterval(setTime, 1000);
 }))
 
-
-
-//timer
 applyIcons();
 
 
+//apply icons during reset will have to remove the icon class before adding another class to it. 
