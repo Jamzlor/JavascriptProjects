@@ -7,31 +7,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Memory Game</title>
     <link rel="stylesheet" href="master.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
 </head>
 
 <body>
+    <div id="winContainer" class="winContainer">
+        <h1 id="winMessage" class="winMessage"></h1>    
+    </div>
     <div id="wrapper" class="wrapper">
         <div id="titleContainer" class="titleContianer">
             <h1 id="title" class="title">JS Memory Game</h1>
         </div>
         <div id="playArea" class="playArea">
-            <div id="card1" class="cards"><p id="card1Icon" class="icon hidden fas"></p></div>
-            <div id="card2" class="cards"><p id="card2Icon" class="icon hidden fas"></p></div>
-            <div id="card3" class="cards"><p id="card3Icon" class="icon hidden fas"></p></div>
-            <div id="card4" class="cards"><p id="card4Icon" class="icon hidden fas"></p></div>
-            <div id="card5" class="cards"><p id="card5Icon" class="icon hidden fas"></p></div>
-            <div id="card6" class="cards"><p id="card6Icon" class="icon hidden fas"></p></div>
-            <div id="card7" class="cards"><p id="card7Icon" class="icon hidden fas"></p></div>
-            <div id="card8" class="cards"><p id="card8Icon" class="icon hidden fas"></p></div>
-            <div id="card9" class="cards"><p id="card9Icon" class="icon hidden fas"></p></div>
-            <div id="card10" class="cards"><p id="card10Icon"class="icon hidden fas"></p></div>
-            <div id="card11" class="cards"><p id="card11Icon"class="icon hidden fas"></p></div>
-            <div id="card12" class="cards"><p id="card12Icon"class="icon hidden fas"></p></div>
-            <div id="card13" class="cards"><p id="card13Icon"class="icon hidden fas"></p></div>
-            <div id="card14" class="cards"><p id="card14Icon"class="icon hidden fas"></p></div>
-            <div id="card15" class="cards"><p id="card15Icon"class="icon hidden fas"></p></div>
-            <div id="card16" class="cards"><p id="card16Icon"class="icon hidden fas"></p></div>
+            <button id="card1" class="cards">
+                <div class="iconContainer hidden">
+                    <p class="icon fas"></p>
+                </div>
+            </button>
+            <button id="card2" class="cards">
+                <div class="iconContainer hidden">
+                    <p class="icon fas"></p>
+                </div>
+            </button>
+            <button id="card3" class="cards">
+                <div class="iconContainer hidden">
+                    <p class="icon fas"></p>
+                </div>
+            </button>
+            <button id="card4" class="cards">
+                <div class="iconContainer hidden">
+                    <p class="icon fas"></p>
+                </div>
+            </button>
+            <button id="card5" class="cards">
+                <div class="iconContainer hidden">
+                    <p class="icon fas"></p>
+                </div>
+            </button>
+            <button id="card6" class="cards">
+                <div class="iconContainer hidden">
+                    <p class="icon fas"></p>
+                </div>
+            </button>
+            <button id="card7" class="cards">
+                <div class="iconContainer hidden">
+                    <p class="icon fas"></p>
+                </div>
+            </button>
+            <button id="card8" class="cards">
+                <div class="iconContainer hidden">
+                    <p class="icon fas"></p>
+                </div>
+            </button>
+            <button id="card9" class="cards">
+                <div class="iconContainer hidden">
+                    <p class="icon fas"></p>
+                </div>
+            </button>
+            <button id="card10" class="cards">
+                <div class="iconContainer hidden">
+                    <p class="icon fas"></p>
+                </div>
+            </button>
+            <button id="card11" class="cards">
+                <div class="iconContainer hidden">
+                    <p class="icon fas"></p>
+                </div>
+            </button>
+            <button id="card12" class="cards">
+                <div class="iconContainer hidden">
+                    <p class="icon fas"></p>
+                </div>
+            </button>
+            <button id="card13" class="cards">
+                <div class="iconContainer hidden">
+                    <p class="icon fas"></p>
+                </div>
+            </button>
+            <button id="card14" class="cards">
+                <div class="iconContainer hidden">
+                    <p class="icon fas"></p>
+                </div>
+            </button>
+            <button id="card15" class="cards">
+                <div class="iconContainer hidden">
+                    <p class="icon fas"></p>
+                </div>
+            </button>
+            <button id="card16" class="cards">
+                <div class="iconContainer hidden">
+                    <p class="icon fas"></p>
+                </div>
+            </button>
         </div>
         <div id="displayContainer" class="displayContainer">
             <div id="timerContainer" class="timerContainer">
